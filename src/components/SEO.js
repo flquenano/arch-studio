@@ -21,7 +21,7 @@ export const SEO = ({ description, lang, meta, title, pathname }) => {
   `);
 
   const metaDescription = description || siteMetadata.description;
-  const canonical = pathnamev || `${siteMetadata.siteURL}${pathname}`;
+  const canonical = pathname || `${siteMetadata.siteURL}${pathname}`;
   return (
     <Helmet
       htmlAttributes={{ lang }}

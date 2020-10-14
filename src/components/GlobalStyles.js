@@ -13,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
 
   *, *::before, *::after{
     box-sizing: inherit;
+    transition: 250ms;
   }
 
   img {
