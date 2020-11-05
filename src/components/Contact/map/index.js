@@ -4,7 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { Wrapper } from "./map.css.js";
 
 export const Map = ({ offices, markerRefs, mapRef }) => {
-  return (
+  return typeof window !== "undefined" ? (
     <Wrapper ref={mapRef}>
       <MapContainer
         center={[33.329845, -91.205695]}
@@ -36,7 +36,7 @@ export const Map = ({ offices, markerRefs, mapRef }) => {
         ))}
       </MapContainer>
     </Wrapper>
-  );
+  ) : null;
 };
 
 Map.propTypes = {
