@@ -7,13 +7,12 @@ import { Selector } from "./Selector";
 
 export const SlideShow = ({ slideShow }) => {
   const [index, setIndex] = useState(0);
-  let timeout = 0;
   const setActive = (idx) => {
     setIndex(idx);
   };
 
   useEffect(() => {
-    timeout = setInterval(
+    const timeout = setInterval(
       () => setIndex((state) => (state + 1) % slideShow.length),
       5000
     );

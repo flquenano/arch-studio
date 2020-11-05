@@ -40,7 +40,8 @@ export const Content = styled(animated.div)`
     left: 7.56%;
   }
   @media ${(props) => props.theme.breakpoints.md} {
-    left: 13.194%;
+    left: 17.1%;
+    top: 49.5%;
   }
 `;
 
@@ -51,6 +52,6 @@ export const Heading = styled(DefaultHeading)`
 
 export const Text = styled(DefaultText)`
   color: rgb(255, 255, 255) !important;
-  margin-bottom: 5.7rem;
+  margin-bottom: 3rem;
   max-width: 44.5rem;
 `;

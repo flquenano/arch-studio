@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "title": "About",
+    "content": {
+      "title": "Your team of professionals",
+      "body": "Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings."
+    },
+    "image": {
+      "desktop": "image-hero-3x.jpg",
+      "tablet": "image-hero-2x.jpg",
+      "mobile": "image-hero-1x.jpg"
+    }
+  },
+  "heritage": {
+    "title": "Our Heritage",
+    "body": {
+      "p1": "Founded in 2007, we started as a trio of architects. Our complimentary skills and relentless attention to detail turned Arch into one of the most sought after boutique firms in the country.",
+      "p2": "Speciliazing in Urban Design allowed us to focus on creating exceptional structures that live in harmony with their surroundings. We consider every detail from every surrounding element to inform our designs.",
+      "p3": "Our small team of world-class professionals provides input on every project."
+    },
+    "image": "image-heritage-3x.jpg"
+  },
+  "leaders": {
+    "title": "The Leaders",
+    "profiles": [
+      {
+        "name": "Jake Richards",
+        "position": "Chief Architect",
+        "image": "avatar-jake.jpg"
+      },
+      {
+        "name": "Thompson Smith",
+        "position": "Head of Finance",
+        "image": "avatar-thompson.jpg"
+      },
+      {
+        "name": "Jackson Rourke",
+        "position": "Lead Designer",
+        "image": "avatar-jackson.jpg"
+      },
+      {
+        "name": "Maria Simpson",
+        "position": "Senior Architect",
+        "image": "avatar-maria.jpg"
+      }
+    ]
+  }
+}
+
+

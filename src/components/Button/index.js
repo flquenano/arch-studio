@@ -2,18 +2,16 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Wrapper, Arrow } from "./button.css.js";
 
-export const Button = ({ text, fill }) => (
-  <Wrapper>
+export const Button = ({ className, text, ...otherProps }) => (
+  <Wrapper className={className} {...otherProps}>
     {text} <Arrow />
   </Wrapper>
 );
 
 Button.defaultProps = {
-  text: "",
-  fill: false
+  text: ""
 };
 
 Button.propTypes = {
-  text: PropTypes.string,
-  fill: PropTypes.bool
+  text: PropTypes.string
 };

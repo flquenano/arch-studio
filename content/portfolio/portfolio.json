@@ -1,0 +1,113 @@
+{
+  "title": "Porfolio",
+  "items": [
+    {
+      "title": "Seraph Station",
+      "date": "September 2019",
+      "image": {
+        "desktop" :"image-seraph-3x.jpg",
+        "tablet": "image-seraph-2x.jpg",
+        "mobile": "image-seraph-1x.jpg"
+      }
+    },
+    {
+      "title": "Eebox Building",
+      "date": "August 2017",
+      "image": {
+        "desktop" :"image-eebox-3x.jpg",
+        "tablet": "image-eebox-2x.jpg",
+        "mobile": "image-eebox-1x.jpg"
+      }
+    },
+    {
+      "title": "Federal II Tower",
+      "date": "March 2017",
+      "image": {
+        "desktop" :"image-federal-3x.jpg",
+        "tablet": "image-federal-2x.jpg",
+        "mobile": "image-federal-1x.jpg"
+      }
+    },
+    {
+      "title": "Project Del Sol",
+      "date": "January 2016",
+      "image": {
+        "desktop" :"image-del-sol-3x.jpg",
+        "tablet": "image-del-sol-2x.jpg",
+        "mobile": "image-del-sol-1x.jpg"
+      }
+    },
+    {
+      "title": "Le Prototype",
+      "date": "October 2015",
+      "image": {
+        "desktop" :"image-prototype-3x.jpg",
+        "tablet": "image-prototype-2x.jpg",
+        "mobile": "image-prototype-1x.jpg"
+      }
+    },
+    {
+      "title": "228B Tower",
+      "date": "April 2015",
+      "image": {
+        "desktop" :"image-228b-3x.jpg",
+        "tablet": "image-228b-2x.jpg",
+        "mobile": "image-228b-1x.jpg"
+      }
+    },
+    {
+      "title": "Grand Edelweiss Hotel",
+      "date": "December 2013",
+      "image": {
+        "desktop" :"image-edelweiss-3x.jpg",
+        "tablet": "image-edelweiss-2x.jpg",
+        "mobile": "image-edelweiss-1x.jpg"
+      }
+    },
+    {
+      "title": "Netcry Tower",
+      "date": "August 2012",
+      "image": {
+        "desktop" :"image-netcry-3x.jpg",
+        "tablet": "image-netcry-2x.jpg",
+        "mobile": "image-netcry-1x.jpg"
+      }
+    },
+    {
+      "title": "Hypers",
+      "date": "January 2012",
+      "image": {
+        "desktop" :"image-hypers-3x.jpg",
+        "tablet": "image-hypers-2x.jpg",
+        "mobile": "image-hypers-1x.jpg"
+      }
+    },
+    {
+      "title": "SXIV Tower",
+      "date": "March 2011",
+      "image": {
+        "desktop" :"image-sxiv-3x.jpg",
+        "tablet": "image-sxiv-2x.jpg",
+        "mobile": "image-sxiv-1x.jpg"
+      }
+    },
+    {
+      "title": "Trinity Bank Tower",
+      "date": "September 2010",
+      "image": {
+        "desktop" :"image-trinity-3x.jpg",
+        "tablet": "image-trinity-2x.jpg",
+        "mobile": "image-trinity-1x.jpg"
+      }
+    },
+    {
+      "title": "Project Paramour",
+      "date": "February 2008",
+      "image": {
+        "desktop" :"image-paramour-3x.jpg",
+        "tablet": "image-paramour-2x.jpg",
+        "mobile": "image-paramour-1x.jpg"
+      }
+    }
+  ]
+}

@@ -10,7 +10,6 @@ export const Wrapper = styled.div`
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 114rem;
   }
-
   &::after {
     content: "";
     position: absolute;
@@ -26,7 +25,7 @@ export const Wrapper = styled.div`
 
 export const Img = styled(animated.img)`
   position: absolute;
-  top: 10rem;
+  top: 12.25rem;
   bottom: 0;
   right: 0;
   z-index: -1;
@@ -43,12 +42,13 @@ export const Content = styled(animated.div)`
     top: -2.65rem;
   }
   @media ${(props) => props.theme.breakpoints.md} {
-    max-width: 44.6rem;
-  }
-  @media ${(props) => props.theme.breakpoints.md} {
     width: 44.6rem;
-    left: 19rem;
+    max-width: 44.6rem;
+    left: 0;
     top: 0;
+  }
+  @media ${(props) => props.theme.breakpoints.lg} {
+    left: 19rem;
   }
 `;
 
@@ -56,7 +56,7 @@ export const Text = styled(DefaultText)`
   max-width: 57.2rem;
   text-align: start;
   &:not(:last-child) {
-    padding-bottom: 1.75rem;
+    margin-bottom: 2.5rem;
   }
 `;
 
@@ -64,7 +64,7 @@ export const HeadingH1L = styled(DefaultHeading)`
   position: relative;
   @media ${(props) => props.theme.breakpoints.md} {
     position: relative;
-    top: 0;
+    top: 2rem;
     left: 0;
     z-index: 5;
   }

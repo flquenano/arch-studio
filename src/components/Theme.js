@@ -15,5 +15,6 @@ export const Theme = {
     md: `(min-width: 1024px)`,
     sm: `(min-width: 768px)`,
     xs: `(min-width: 540px)`
-  }
+  },
+  maxWidth: "120rem"
 };

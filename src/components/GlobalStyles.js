@@ -13,7 +13,6 @@ export const GlobalStyle = createGlobalStyle`
 
   *, *::before, *::after{
     box-sizing: inherit;
-    transition: 250ms;
   }
 
   img {
@@ -42,8 +41,14 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
+  li {
+    transition: 250ms;
+  }
+
   a {
     text-decoration: none;
     color: inherit;
   }
+
+
 `;

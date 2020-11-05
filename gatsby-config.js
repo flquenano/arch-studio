@@ -27,14 +27,7 @@ module.exports = {
         icon: "src/static/favicon-32x32.png"
       }
     },
-    {
-      resolve: `gatsby-plugin-web-font-loader`,
-      options: {
-        google: {
-          families: ["Spartan:wght@500;600;700 "]
-        }
-      }
-    },
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

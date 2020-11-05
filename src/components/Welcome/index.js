@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useSpring, animated, config } from "react-spring";
+import { useSpring, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
 import WelcomeImage from "./image-welcome-3x.jpg";
 import {
@@ -53,7 +53,12 @@ export const Welcome = () => {
 
     imgQuery.addEventListener("change", imgMediaQuery);
     imgMediaQuery(imgQuery);
-  });
+
+    return () => {
+      textQuery.removeEventListener("change", textMediaQuery);
+      imgQuery.removeEventListener("change", imgMediaQuery);
+    };
+  }, []);
 
   const textMediaQuery = ({ matches }) => {
     setShowText(matches);
@@ -71,9 +76,7 @@ export const Welcome = () => {
 
       {showText ? (
         <animated.div style={textSpring}>
-          <HeadingH1L size="H1L" style={textSpring}>
-            Welcome
-          </HeadingH1L>
+          <HeadingH1L size="H1L">Welcome</HeadingH1L>
         </animated.div>
       ) : null}
 

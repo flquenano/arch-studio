@@ -5,19 +5,22 @@ import { GlobalStyle } from "../GlobalStyles.js";
 import { Theme } from "../Theme.js";
 import { Container, Main } from "./layout.css.js";
 import { Navbar } from "../Navbar";
+import { SideTitle } from "../SideTitle";
 import { Footer } from "../Footer";
 
-export const Layout = ({ children }) => (
+export const Layout = ({ children, title }) => (
   <ThemeProvider theme={Theme}>
+    <GlobalStyle />
     <Container>
-      <GlobalStyle />
       <Navbar />
+      <SideTitle title={title} />
       <Main>{children}</Main>
-      <Footer />
     </Container>
+    <Footer />
   </ThemeProvider>
 );
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired
 };

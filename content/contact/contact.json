@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "title": "Contact",
+    "content": {
+      "title": "Tell us about your project",
+      "body": "We’d love to hear more about your project. Please, leave a message below or give us a call. We have two offices, one in Texas and one in Tennessee. If you find yourself nearby, come say hello!"
+    },
+    "image": {
+      "desktop": "./image-hero-3x.jpg",
+      "tablet": "./image-hero-2x.jpg",
+      "mobile": "./image-hero-1x.jpg"
+    }
+  },
+  "details": {
+    "title": "Contact Details",
+    "offices":[
+      {
+        "title": "Main Office",
+        "mail": "archone@mail.com",
+        "address": "1892  Chenoweth Drive TN",
+        "phone": "123-456-3451",
+        "coordinates": {
+          "latitude": "35.569299",
+          "longitude": "-83.498355"
+        }
+      },
+      {
+        "title": "Office II",
+        "mail": "archtwo@mail.com",
+        "address": "3399  Wines Lane TX",
+        "phone": "832-123-4321",
+        "coordinates": {
+          "latitude": "32.172359",
+          "longitude": "-96.207896"
+        }
+      }
+    ]
+  }
+
+}

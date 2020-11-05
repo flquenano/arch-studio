@@ -1,0 +1,85 @@
+{
+  "SlideShow": [
+    {
+      "heading": "Project Paramour",
+      "text": "Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.",
+      "image": {
+        "desktop": "image-hero-paramour-3x.jpg",
+        "tablet": "image-hero-paramour-2x.jpg",
+        "mobile":"image-hero-paramour-1x.jpg"
+      }
+    },
+    {
+      "heading": "Seraph Station",
+      "text": "The Seraph Station project challenged us to design a unique station that would transport people through time. The result is a fresh and futuristic model inspired by space stations.",
+      "image": {
+        "desktop": "image-hero-seraph-3x.jpg",
+        "tablet": "image-hero-seraph-2x.jpg",
+        "mobile":"image-hero-seraph-1x.jpg"
+      }
+    },
+    {
+      "heading": "Federal II Tower",
+      "text": "A sequel theme project for a tower originally built in the 1800s. We achieved this with a striking look of brutal minimalism with modern touches.",
+      "image": {
+        "desktop": "image-hero-federal-3x.jpg",
+        "tablet": "image-hero-federal-2x.jpg",
+        "mobile":"image-hero-federal-1x.jpg"
+      }
+    },
+    {
+      "heading": "Trinity Bank Tower",
+      "text": "Trinity Bank challenged us to make a concept for a 84 story building located in the middle of a city with a high earthquake frequency. For this project we used curves to blend design and stability to meet our objectives.",
+      "image": {
+        "desktop": "image-hero-trinity-3x.jpg",
+        "tablet": "image-hero-trinity-2x.jpg",
+        "mobile":"image-hero-trinity-1x.jpg"
+      }
+    }
+  ],
+  "CTA":{
+    "title":"Small team, big ideas",
+    "button": "About Us",
+    "image": {
+      "mobile": "./image-small-team-1x.jpg",
+      "tablet": "./image-small-team-2x.jpg",
+      "desktop": "./image-small-team-3x.jpg"
+    }
+  },
+  "Gallery": {
+    "title": "Featured",
+    "button": "See All",
+    "items": [
+      {
+        "id": "1",
+        "name": "Project Del Sol",
+        "desc": "View All Projects",
+        "image": {
+          "mobile": "../portfolio/image-del-sol-1x.jpg",
+          "tablet": "../portfolio/image-del-sol-2x.jpg",
+          "desktop": "../portfolio/image-del-sol-3x.jpg"
+        }
+      },
+      {
+        "id": "2",
+        "name": "228B Tower",
+        "desc": "View All Projects",
+        "image": {
+          "mobile": "../portfolio/image-228b-1x.jpg",
+          "tablet": "../portfolio/image-228b-2x.jpg",
+          "desktop": "../portfolio/image-228b-3x.jpg"
+        }
+      }, 
+      {
+        "id": "3",
+        "name": "Le Prototype",
+        "desc": "View All Projects",
+        "image": {
+          "mobile": "../portfolio/image-prototype-1x.jpg",
+          "tablet": "../portfolio/image-prototype-2x.jpg",
+          "desktop": "../portfolio/image-prototype-3x.jpg"
+        }
+      }
+    ]
+  }
+}

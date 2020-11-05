@@ -1,34 +1,17 @@
 import React from "react";
 import { SEO } from "../components/SEO.js";
 import { Layout } from "../components/layout";
-import { Button } from "../components/Button";
+import { Welcome } from "../components/Welcome";
+// import { CTA } from "../components/CTA";
+import { Gallery, SlideShow, CTA } from "../sections/home";
 
 const Home = () => (
-  <Layout>
+  <Layout title="HOME">
     <SEO title="Home" />
-    <h1>Footer</h1>
-    <Button text="About Us" />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <SlideShow />
+    <Welcome />
+    <CTA />
+    <Gallery />
   </Layout>
 );
 
