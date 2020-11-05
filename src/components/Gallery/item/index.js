@@ -19,7 +19,7 @@ export const Item = ({ name, desc, image, number, trail }) => {
   return (
     <Link to="/portfolio">
       <Wrapper>
-        <Img fluid={source} alt="Featured Work" />
+        <Img fluid={source} alt="Featured Work" loading="eager" />
         {number ? <Number size="H1L">{number}</Number> : null}
         <Content>
           <Heading size="H3">{name}</Heading>
