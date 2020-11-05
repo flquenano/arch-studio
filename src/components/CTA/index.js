@@ -20,7 +20,7 @@ export const CTA = ({ title, image, button }) => {
 
   return (
     <Wrapper>
-      <Img fluid={sources} />
+      <Img fluid={sources} loading="eager" />
       <Content>
         <Heading size="H2">{title}</Heading>
         <Link to="/about">
