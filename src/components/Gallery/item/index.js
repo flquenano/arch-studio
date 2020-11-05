@@ -18,7 +18,7 @@ export const Item = ({ name, desc, image, number, trail }) => {
 
   return (
     <Link to="/portfolio">
-      <Wrapper style={trail}>
+      <Wrapper>
         <Img fluid={source} alt="Featured Work" />
         {number ? <Number size="H1L">{number}</Number> : null}
         <Content>
@@ -33,11 +33,4 @@ export const Item = ({ name, desc, image, number, trail }) => {
 Item.defaultProps = {
   number: false,
   desc: false
-};
-
-Item.propTypes = {
-  name: PropTypes.string.isRequired,
-  desc: PropTypes.string,
-  image: PropTypes.object.isRequired,
-  trail: PropTypes.object.isRequired
 };

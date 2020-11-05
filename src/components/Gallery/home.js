@@ -14,26 +14,17 @@ import {
 } from "./gallery.css.js";
 
 export const Gallery = ({ title, button, items }) => {
-  const { ref, inView } = useInView({ threshold: 0.4, triggerOnce: true });
-
-  const trail = useTrail(items.length, {
-    from: { opacity: 0 },
-    opacity: inView ? 1 : 0,
-    transform: inView ? "translateY(0)" : "translateY(10%)"
-  });
-
   return (
-    <Wrapper ref={ref}>
+    <Wrapper>
       <Head>
         <Heading size="H2">{title}</Heading>
-        <Link to="/portfolio">
+        <Link to="p">
           <DesktopBtn text={button} />
         </Link>
       </Head>
       <Content>
-        {trail.map((props, idx) => (
+        {items.map((props, idx) => (
           <Item
-            trail={props}
             number={items[idx].id}
             key={items[idx].id}
             name={items[idx].name}

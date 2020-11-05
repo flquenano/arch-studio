@@ -12,75 +12,15 @@ import {
 } from "./welcome.css.js";
 
 export const Welcome = () => {
-  const [showText, setShowText] = useState(false);
-  const [showImage, setShowImage] = useState(false);
-  const { ref, inView } = useInView({
-    threshold: 0.8,
-    triggerOnce: true
-  });
-  const textSpring = useSpring({
-    opacity: inView ? 1 : 0,
-    transform: inView ? "translateX(0%)" : "translateX(-20%)"
-  });
-
-  const imgSpring = useSpring({
-    to: {
-      opacity: inView ? 1 : 0,
-      transform: inView ? "translateX(0%)" : "translateX(20%)"
-    },
-    from: {
-      opacity: 0
-    },
-    delay: 300
-  });
-  const contentSpring = useSpring({
-    to: {
-      opacity: inView ? 1 : 0,
-      transform: inView ? "translateY(0%)" : "translateY(20%)"
-    },
-    from: {
-      opacity: 0
-    },
-    delay: 500
-  });
-
-  useEffect(() => {
-    const imgQuery = window.matchMedia("(min-width: 1024px)");
-    const textQuery = window.matchMedia("(min-width: 740px)");
-
-    textQuery.addEventListener("change", textMediaQuery);
-    textMediaQuery(textQuery);
-
-    imgQuery.addEventListener("change", imgMediaQuery);
-    imgMediaQuery(imgQuery);
-
-    return () => {
-      textQuery.removeEventListener("change", textMediaQuery);
-      imgQuery.removeEventListener("change", imgMediaQuery);
-    };
-  }, []);
-
-  const textMediaQuery = ({ matches }) => {
-    setShowText(matches);
-  };
-
-  const imgMediaQuery = ({ matches }) => {
-    setShowImage(matches);
-  };
-
   return (
-    <Wrapper ref={ref}>
-      {showImage ? (
-        <Img src={WelcomeImage} alt="Welcome" style={{ ...imgSpring }} />
-      ) : null}
+    <Wrapper>
+      <Img src={WelcomeImage} alt="Welcome" />
 
-      {showText ? (
-        <animated.div style={textSpring}>
-          <HeadingH1L size="H1L">Welcome</HeadingH1L>
-        </animated.div>
-      ) : null}
+      <animated.div>
+        <HeadingH1L size="H1L">Welcome</HeadingH1L>
+      </animated.div>
 
-      <Content style={contentSpring}>
+      <Content>
         <HeadingH2 size="H2">Welcome to Arch Studio</HeadingH2>
         <Text>
           We have a unique network and skillset to help bring your projects to

@@ -6,15 +6,6 @@ import { Wrapper, Img, Content, Heading } from "./cta.css.js";
 import { Button } from "../Button";
 
 export const CTA = ({ title, image, button }) => {
-  const { ref, inView } = useInView({ threshold: 0.8, triggerOnce: true });
-  const contentSpring = useSpring({
-    from: { opacity: 0 },
-    to: {
-      opacity: inView ? 1 : 0,
-      transform: inView ? "translateY(-50%)" : "translateY(10%)"
-    }
-  });
-
   const sources = [
     {
       ...image.desktop.childImageSharp.fluid,
@@ -28,9 +19,9 @@ export const CTA = ({ title, image, button }) => {
   ];
 
   return (
-    <Wrapper ref={ref}>
+    <Wrapper>
       <Img fluid={sources} />
-      <Content style={contentSpring}>
+      <Content>
         <Heading size="H2">{title}</Heading>
         <Link to="/about">
           <Button text={button} />
