@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTransition } from "react-spring";
 import PropTypes from "prop-types";
 import { Wrapper, Label, Input, Underline, Warning } from "./textarea.css.js";
 
-export const TextArea = ({ name, error, value, change }) => {
+export const TextArea = ({ name, error, inputRef }) => {
+  const [value, setValue] = useState("");
   const warningTransition = useTransition(error, null, {
     from: {
       opacity: 0,
@@ -26,9 +27,10 @@ export const TextArea = ({ name, error, value, change }) => {
         id={name}
         name={name}
         $error={error}
-        onChange={change}
         hasvalue={value}
         maxLength="150"
+        ref={inputRef}
+        onBlur={(e) => setValue(e.target.value)}
       />
       <Label htmlFor={name} $error={error}>
         {name}
@@ -53,6 +55,5 @@ TextArea.defaultProps = {
 TextArea.propTypes = {
   error: PropTypes.bool,
   name: PropTypes.string.isRequired,
-  change: PropTypes.func.isRequired,
-  value: PropTypes.string
+  inputRef: PropTypes.object.isRequired
 };

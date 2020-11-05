@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTransition } from "react-spring";
 import PropTypes from "prop-types";
 import { Wrapper, Label, Input, Underline, Warning } from "./textbox.css.js";
 
-export const Textbox = ({ name, error, errMsg, value, change }) => {
+export const Textbox = ({ name, error, errMsg, inputRef }) => {
+  const [value, setValue] = useState("");
   const warningTransition = useTransition(error, null, {
     from: {
       opacity: 0,
@@ -26,9 +27,10 @@ export const Textbox = ({ name, error, errMsg, value, change }) => {
         id={name}
         name={name}
         $error={error}
-        onChange={change}
         hasvalue={value}
         maxLength="30"
+        ref={inputRef}
+        onBlur={(e) => setValue(e.target.value)}
       />
       <Label htmlFor={name} $error={error}>
         {name}
@@ -55,6 +57,5 @@ Textbox.propTypes = {
   name: PropTypes.string.isRequired,
   error: PropTypes.bool,
   errMsg: PropTypes.string,
-  change: PropTypes.func.isRequired,
-  value: PropTypes.string
+  inputRef: PropTypes.object.isRequired
 };
