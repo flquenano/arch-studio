@@ -21,7 +21,7 @@ export const Navbar = () => {
   };
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const mediaQuery = window.matchMedia("(max-width: 765px)");
     mediaQuery.addEventListener("change", handleMediaQuery);
     handleMediaQuery(mediaQuery);
     return () => {
